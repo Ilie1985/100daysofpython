@@ -17,12 +17,13 @@ files:
     learner_created: false
 status: Failed
 feedback:
-  message: "'Welcome to Python Pizza Deliveries!\\n\\n' != 'Welcome to Python Pizza\
-    \ Deliveries!\\nYour final bill is: $25.\\n'"
-  time: "Wed, 28 Aug 2024 20:45:15 UTC"
-  expected: |+
+  message: "'Welcome to Python Pizza Deliveries!\\n\\nYour final bill is: $25....\\\
+    n' != 'Welcome to Python Pizza Deliveries!\\nYour final bill is: $25.\\n'"
+  time: "Sat, 31 Aug 2024 12:38:07 UTC"
+  expected: |
     Welcome to Python Pizza Deliveries!
 
+    Your final bill is: $25....
   actual: |
     Welcome to Python Pizza Deliveries!
     Your final bill is: $25.
