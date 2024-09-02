@@ -26,12 +26,9 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-# user_moves = [rock, paper, scissors]
-cpu_moves = [rock, paper, scissors]
 
-# user_index = random.randint(0, len(user_moves)-1)
+cpu_moves = [rock, paper, scissors]
 cpu_index = random.randint(0, len(cpu_moves)-1)
-print(cpu_index)
 
 
 print("Welcome to Rock, Paper, Scissors game")
