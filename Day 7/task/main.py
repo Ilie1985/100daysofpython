@@ -4,35 +4,29 @@ word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
-# TODO-1: Create a "placeholder" with the same number of blanks as the chosen_word
 placeholder = ""
-display = ""
+word_length = len(chosen_word)
+for position in range(word_length):
+    placeholder += "_"
+print(placeholder)
+
+# TODO-1: - Use a while loop to let the user guess again.
+
 guess = input("Guess a letter: ").lower()
 
+display = ""
+
+while display != chosen_word:
+    if display != chosen_word:
+
+
+
+# TODO-2: Change the for loop so that you keep the previous correct letters in display.
 
 for letter in chosen_word:
-    placeholder = placeholder + "_"
-    print(placeholder)
-if guess in chosen_word:
-    display += guess
-    print(display)
-elif guess not in chosen_word:
-    display += "_"
+    if letter == guess:
+        display += letter
+    else:
+        display += "_"
 
-
-# TODO-2: Create a "display" that puts the guess letter in the right positions and _ in the rest of the string.
-
-
-# for letter in chosen_word:
-#     if guess in chosen_word:
-#         display += letter
-#         print(display)
-#
-#     elif letter not in chosen_word:
-#         display += "_"
-
-
-
-
-
-
+print(display)
