@@ -21,6 +21,6 @@ def encrypt(text, shift):
         new_position = position + shift
         new_letter = alphabet[new_position]
         encrypted_word+= new_letter
-    print("encripted word",encrypted_word)
+    print("encripted word", encrypted_word)
 
 encrypt(text,shift)
